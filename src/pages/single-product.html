@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico">
+  <!-- Bootstrap-5 CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <title>Empowering Wellness with Every Spice - Single Product Page</title>
+</head>
+
+<!-- Header  -->
+<header class="py-2 px-3">
+  <nav class="navbar navbar-expand-lg rounded">
+    <div class="container-fluid">
+      <a class="website-title text-uppercase" href="index.html">Island Essence</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <button class="btn primary-btn rounded p-1" id="toggleCurrency" title="convert currency"></button>
+        <ul class="navbar-nav">
+          <li class="nav-item model-btn" id="wishlist">
+            <a class="nav-link position-relative" href="#" data-bs-toggle="modal"
+              data-bs-target="#productWishListModal">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge model-btn-badge wish-list-badge rounded-pill bg-danger">
+              <small>0</small>
+            </span>
+          </li>
+          <li class="nav-item model-btn" id="cart">
+            <a class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#productCartModal">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <span class="position-absolute top-0 start-100 translate-middle badge model-btn-badge cart-badge rounded-pill bg-danger">
+              <small>0</small>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Wish list modal  -->
+<div class="modal fade wish-list-modal" id="productWishListModal" tabindex="-1" aria-labelledby="productWishListLabel"
+  aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productWishListLabel">Wish List Items</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="wish-list-items-row">
+
+            <!-- Rendring from JS -->
+          </div>
+          <div class="d-flex justify-content-end mt-3">
+            <p>Total Items: <strong class="wish-list-items-total">0</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart modal  -->
+<div class="modal fade cart-modal" id="productCartModal" tabindex="-1" aria-labelledby="productCartModalLabel"
+  aria-hidden="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productCartModalLabel">Cart details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="cart-items-row">
+            <!-- Rendring from JS -->
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <p>Items: <strong class="cart-items-count">0</strong></p>
+            <p>Total: <strong class="cart-total">$0.00</strong></p>
+          </div>
+        </div>
+        <div class="modal-footer pb-0">
+          <a href="payment.html" class="btn primary-btn cart-checkout-btn">Checkout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- content -->
+<section id="single-product" class="py-5">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-6 mb-3 mb-lg-0 p-md-0">
+        <div class="border rounded-4 d-flex justify-content-center h-100">
+          <img style="margin: auto;" class="rounded-4 fit" id="product-img" src="" />
+        </div>
+      </aside>
+      <main class="col-lg-6">
+        <div class="ps-lg-3">
+          <h2 class="title" id="product-name"></h2>
+
+          <div class="my-2 product-price-tag">
+            <span class="h5 product-price"></span>
+          </div>
+
+          <p class="my-3" id="product-description"></p>
+
+          <div class="row">
+            <dt class="col-3">Catogary:</dt>
+            <dd class="col-9" id="product-catogary"></dd>
+
+            <dt class="col-3">Type:</dt>
+            <dd class="col-9" id="product-type"></dd>
+
+            <dt class="col-3">Brand:</dt>
+            <dd class="col-9" id="product-brand"></dd>
+          </div>
+
+          <hr />
+
+          <div class="row my-1">
+            <!-- col.// -->
+            <div class="col-md-4 col-6">
+              <label class="mb-2 d-block">Quantity</label>
+              <div class="input-group mb-1" style="width: 170px;">
+                <button class="btn btn-white border border-secondary px-3" type="button"
+                  id="decrease-number-of-products" data-mdb-ripple-color="dark">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="text" id="number-of-products" class="form-control text-center border border-secondary"
+                  aria-label="Example text with button addon" aria-describedby="button-addon1" />
+                <button class="btn btn-white border border-secondary px-3" type="button"
+                  id="increase-number-of-products" data-mdb-ripple-color="dark">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-wishlist-div d-flex justify-content-start align-items-center gap-2 flex-wrap my-2">
+            <!-- Rendering from JS -->
+          </div>
+          <div class="buttons-div d-flex justify-content-start align-items-center gap-2 flex-wrap">
+            <!-- Rendering from JS -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="row border rounded-4 p-3 mt-3">
+      <div class="col-12">
+        <h2 class="mb-4">Product Details</h2>
+        <div class="accordion" id="accordion">
+          <div class="accordion-item product-specifications-accordion-item">
+            <h4 class="accordion-header" id="product-specifications">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-product-specifications" aria-expanded="true"
+                aria-controls="collapse-product-specifications">
+                Specifications
+              </button>
+            </h4>
+            <div id="collapse-product-specifications" class="accordion-collapse collapse show"
+              aria-labelledby="product-specifications" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <p>
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when
+                  the user activates the relevant trigger.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item product-ingredients-accordion-item">
+            <h4 class="accordion-header" id="product-ingredients">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-product-ingredients" aria-expanded="false"
+                aria-controls="collapse-product-ingredients">
+                Ingredients
+              </button>
+            </h4>
+            <div id="collapse-product-ingredients" class="accordion-collapse collapse"
+              aria-labelledby="product-ingredients" data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <div id="product-ingredients-list">
+                  <ul>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item product-benefits-accordion-item">
+            <h4 class="accordion-header" id="product-benefits">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-product-benefits" aria-expanded="false"
+                aria-controls="collapse-product-benefits">
+                Benefits
+              </button>
+            </h4>
+            <div id="collapse-product-benefits" class="accordion-collapse collapse" aria-labelledby="product-benefits"
+              data-bs-parent="#accordion">
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <figure class="d-flex align-items-center mb-4 rounded p-2">
+                      <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                        <i class="fas fa-camera-retro fa-2x fa-fw floating"></i>
+                      </span>
+                      <figcaption class="info">
+                        <h6 class="title">Reasonable prices</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-md-6">
+                    <figure class="d-flex align-items-center mb-4 rounded p-2">
+                      <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                        <i class="fas fa-star fa-2x fa-fw floating"></i>
+                      </span>
+                      <figcaption class="info">
+                        <h6 class="title">Best quality</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-md-6">
+                    <figure class="d-flex align-items-center mb-4 rounded p-2">
+                      <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                        <i class="fas fa-plane fa-2x fa-fw floating"></i>
+                      </span>
+                      <figcaption class="info">
+                        <h6 class="title">Isladwide shipping</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div class="col-md-6">
+                    <figure class="d-flex align-items-center mb-4 rounded p-2">
+                      <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                        <i class="fas fa-users fa-2x fa-fw floating"></i>
+                      </span>
+                      <figcaption class="info">
+                        <h6 class="title">Customer satisfaction</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- content -->
+
+
+  <!-- Footer -->
+  <footer class="footer text-center text-lg-start mt-2 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Contact Us</h5>
+          <p>+94 74 034 0101</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Follow Us</h5>
+          <p>
+            <a href="https://web.facebook.com/IslandEssence/?_rdc=1&_rdr" target="_blank" class="social-links"><i class="fa-brands fa-facebook mx-2"></i>Island Essence</a>
+          </p>
+        </div>
+
+        <!-- Certification Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Certifications</h5>
+          <p>ISO 22000 Certified</p>
+        </div>
+
+        <!-- Payment & Appointments -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="title mb-3">Payments</h5>
+          <div>
+            <!-- Payment Icons (Placeholder) -->
+            <!-- <img src="placeholder.png" alt="Payment Icon" class="payment-icons">
+            <img src="placeholder.png" alt="Payment Icon" class="payment-icons"> -->
+          </div>
+          <div class="mt-3">
+            <a href="./consult-doctor.html" class="btn btn-consultation primary-btn">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap-5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script type="module" src="/src/scripts/main.js"></script>
+
+</body>
+
+</html>

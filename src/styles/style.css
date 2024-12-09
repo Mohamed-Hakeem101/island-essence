@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.primary-btn {
+  background-color: #41563E;
+  color: #fff;
+  transition: all ease 0.7s;
+}
+.primary-btn:hover, .primary-btn:active {
+  background-color: transparent;
+  color: #41563E;
+  border: 1px solid #41563E;
+}
+
+.secondary-btn {
+  background-color: #999999;
+  color: #fff;
+  transition: all ease 0.7s;
+}
+.secondary-btn:hover, .secondary-btn:active {
+  background-color: transparent;
+  color: #999999;
+  border: 1px solid #999999;
+}
+
+.warning-btn {
+  background-color: #bd9c08;
+  color: #fff;
+  transition: all ease 0.7s;
+}
+.warning-btn:hover, .warning-btn:active {
+  background-color: transparent;
+  color: #bd9c08;
+  border: 1px solid #bd9c08;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+select:hover {
+  cursor: pointer !important;
+}
+
+header,
+footer {
+  background-color: rgba(37, 109, 27, 0.2);
+}
+
+header {
+  height: 70px;
+}
+header nav {
+  background-color: transparent;
+}
+header nav .website-title,
+header nav .nav-link {
+  color: #41563E !important;
+}
+header nav .website-title {
+  font-weight: 600;
+}
+header nav .nav-item {
+  width: 2rem;
+}
+header nav .model-btn {
+  position: relative;
+}
+header nav .model-btn .model-btn-badge {
+  background-color: #999999;
+  color: #fff;
+  z-index: 101;
+}
+
+.container .section-title {
+  background-color: #41563E;
+  color: #fff;
+}
+
+#products .products-sorting,
+#products .products-filtering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#products form {
+  position: relative;
+}
+#products form label {
+  position: absolute;
+  top: 20%;
+  right: 0.5rem;
+}
+
+#new-products .products-sorting a {
+  color: #41563E;
+  font-weight: 600;
+}
+
+.product-card {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.product-card .card-top {
+  background-color: rgba(37, 109, 27, 0.2);
+}
+.product-card .card-top img {
+  aspect-ratio: 1/1;
+  mix-blend-mode: darken;
+}
+
+.add-to-wishlist,
+.add-to-cart {
+  cursor: pointer;
+  color: #41563E;
+  background-color: transparent;
+}
+
+#new-products .swiper {
+  width: 100%;
+  height: 400px;
+}
+#new-products .swiper .swiper-wrapper {
+  width: 100%;
+  height: 95%;
+}
+#new-products .swiper .swiper-wrapper .swiper-slide .product-card {
+  width: 240px;
+  height: 350px;
+}
+#new-products .swiper .swiper-wrapper .swiper-slide .product-card img {
+  height: 200px;
+}
+#new-products .swiper .navigation-btn::after, #new-products .swiper .navigation-btn::before {
+  color: #41563E;
+}
+#new-products .swiper .swiper-pagination {
+  bottom: 0;
+}
+#new-products .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #41563E;
+}
+
+figure {
+  background-color: rgba(37, 109, 27, 0.2);
+}
+figure i {
+  color: #41563E;
+}
+figure .title {
+  font-weight: 600;
+}
+
+form input:focus {
+  box-shadow: none !important;
+  border-color: #41563E !important;
+}
+form input:focus ~ label {
+  color: #41563E !important;
+}
+form input::-moz-placeholder {
+  color: rgba(153, 153, 153, 0.2666666667) !important;
+}
+form input::placeholder {
+  color: rgba(153, 153, 153, 0.2666666667) !important;
+}
+form label {
+  color: #999999;
+}
+form select {
+  box-shadow: none !important;
+  border-color: rgba(153, 153, 153, 0.2666666667) !important;
+}
+form select::-moz-selection {
+  border-color: #41563E !important;
+  box-shadow: none !important;
+}
+form select::selection {
+  border-color: #41563E !important;
+  box-shadow: none !important;
+}
+form .error-message {
+  color: rgb(253, 41, 33);
+}
+form a {
+  color: #41563E;
+}
+
+#error-body h1 {
+  color: #41563E;
+}
+
+#single-product h2 {
+  color: #41563E;
+}
+#single-product .accordion-button {
+  background-color: transparent !important;
+  color: #000000;
+}
+#single-product .accordion-button:focus {
+  box-shadow: none !important;
+  color: #000000;
+}
+#single-product .product-benefits-accordion-item .accordion-body {
+  background-color: #f5f5f5;
+}
+
+.footer .title {
+  font-weight: 600;
+}
+.footer .social-links {
+  color: #41563E;
+}
+.footer .social-links i {
+  color: #41563E;
+}
+.footer .payment-icons {
+  height: 30px;
+  width: auto;
+  margin: 5px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

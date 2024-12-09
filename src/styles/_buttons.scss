@@ -1,0 +1,27 @@
+@import "./variables";
+
+// btn mixin 
+@mixin button-base($color)
+{
+    background-color: $color;
+    color: $whiteColor;
+    transition: all ease .7s;
+    
+        &:hover,
+        &:active{
+            background-color: transparent;
+            color: $color;
+            border: 1px solid $color;
+        }
+}
+
+
+.primary-btn {
+    @include button-base($primaryColor);
+}
+.secondary-btn {
+    @include button-base($secondaryColor);
+}
+.warning-btn {
+    @include button-base($warningColor);
+}

@@ -1,0 +1,150 @@
+[
+    {
+      "productID": 1,
+      "productName": "Calm Waters",
+      "category": "Spice Blends",
+      "type": "Calm Waters",
+      "brand": "Island Essence",
+      "price": "10",
+      "description": "A blend to promote relaxation and sleep",
+      "img": "./assets/productsImages/Calm_Waters.WebP",
+      "ingredients": {
+        "1": "Cardamom",
+        "2": "Ashwagandha",
+        "3": "Brahmi",
+        "4": "Jatamansi",
+        "5": "Nutmeg"
+      },
+      "concern": {
+        "1": "Reduce stress & Anxiety",
+        "2": "Improve digestion",
+        "3": "Enhances mental clarity and relaxation",
+        "4": "Reduce mental fatigue",
+        "5": "Restful sleep",
+        "6": "Calming the mind",
+        "7": "Aiding in sleep induction"
+      },
+      "trending": "trending"
+    },
+    {
+      "productID": 2,
+      "productName": "Immunity Growth",
+      "category": "Spice Blends",
+      "type": "Immunity Growth",
+      "brand": "Island Essence",
+      "price": "12",
+      "description": "A blend to support the immune system",
+      "img": "./assets/productsImages/Immunity_Growth.WebP",
+      "ingredients": {
+        "1": "Ginger",
+        "2": "Turmeric",
+        "3": "Cardamom",
+        "4": "Ashwagandha",
+        "5": "Cinnamon",
+        "6": "Tulsi",
+        "7": "Black Pepper",
+        "8": "Amla",
+        "9": "Cloves"
+      },
+      "concern": {
+        "1": "Reduce stress & Anxiety",
+        "2": "Improve digestion",
+        "3": "Regulate blood sugar levels",
+        "4": "Boost immunity",
+        "5": "Reduce respiratory issues",
+        "6": "Fight infections",
+        "7": "Protect cells from damage",
+        "8": "Fighting off colds and flu"
+      },
+      "trending": "trending"
+    },
+    {
+      "productID": 3,
+      "productName": "Inner Fire",
+      "category": "Spice Blends",
+      "type": "Inner Fire",
+      "brand": "Island Essence",
+      "price": "17",
+      "description": "A blend to boost metabolism and energy",
+      "img": "./assets/productsImages/Inner_Fire.WebP",
+      "ingredients": {
+        "1": "Ginger",
+        "2": "Turmeric",
+        "3": "Cardamom",
+        "4": "Ashwagandha",
+        "5": "Cinnamon"
+      },
+      "concern": {
+        "1": "Aiding in overall vitality",
+        "2": "Improve digestion",
+        "3": "Reduce stress & Anxiety",
+        "4": "Boost energy levels",
+        "5": "Boost metabolism",
+        "6": "Regulate blood sugar levels",
+        "7": "Improves insulin sensitivity"
+      },
+      "trending": "trending"
+    },
+    {
+      "productID": 4,
+      "productName": "Island Detox",
+      "category": "Spice Blends",
+      "type": "Island Detox",
+      "brand": "Island Essence",
+      "price": "14",
+      "description": "Ayurvedic digestive spice blend",
+      "img": "./assets/productsImages/Island_Detox.WebP",
+      "ingredients": {
+        "1": "Ginger",
+        "2": "Turmeric",
+        "3": "Cardamom",
+        "4": "Cumin powder",
+        "5": "Coriander powder",
+        "6": "Fennel powder",
+        "7": "Peppermint leaves",
+        "8": "Lemon"
+      },
+      "concern": {
+        "1": "Enhance enzyme production",
+        "2": "Improve digestion",
+        "3": "Absorption of nutrients",
+        "4": "Reduce bloating",
+        "5": "Reduce gas",
+        "6": "Reduce cramps",
+        "7": "Mild laxative properties",
+        "8": "Reduces nausea",
+        "9": "Aiding in overall vitality",
+        "10": "Aids in detoxification",
+        "11": "Freshens breath",
+        "12": "Soothes the stomach lining",
+        "13": "A refreshing taste"
+      },
+      "trending": "trending"
+    },
+    {
+      "productID": 5,
+      "productName": "Sharpened Mind",
+      "category": "Spice Blends",
+      "type": "Sharpened Mind",
+      "brand": "Island Essence",
+      "price": "15",
+      "description": "A blend to enhance focus and memory",
+      "img": "./assets/productsImages/Sharpened_Mind.WebP",
+      "ingredients": {
+        "1": "Ginger",
+        "2": "Gotu Kola",
+        "3": "Ginkgo Biloba",
+        "4": "Brahmi",
+        "5": "Ashwagandha"
+      },
+      "concern": {
+        "1": "Reduce stress & Anxiety",
+        "2": "Reduce mental fatigue",
+        "3": "Improve memory",
+        "4": "Enhance focus & clarity",
+        "5": "Improves blood circulation to the brain",
+        "6": "Support brain health"
+      },
+      "trending": "trending"
+    }
+  ]

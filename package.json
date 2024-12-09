@@ -1,0 +1,18 @@
+{
+  "name": "island-essence",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/pages/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.2"
+  },
+  "dependencies": {
+    "firebase": "^11.0.2"
+  }
+}

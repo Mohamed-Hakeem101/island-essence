@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/src/assets/favicon.ico">
+    <!-- Bootstrap-5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>Empowering Wellness with Every Spice - Consult Doctor</title>
+</head>
+
+<body>
+
+    <!-- Header  -->
+    <header class="py-2 px-3">
+        <nav class="navbar navbar-expand-lg rounded">
+            <div class="container-fluid">
+                <a class="website-title text-uppercase" href="index.html">Island Essence</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="payment">
+        <div class="container my-5">
+            <div class="section-title rounded py-4 px-3 mb-4">
+                <h3>Book an online consultation</h3>
+            </div>
+
+            <!--Grid row-->
+            <div class="row payment-page-row flex-column-reverse flex-lg-row">
+
+                <!--Grid column-->
+                <div class="col-lg-8 mb-4">
+                    <!-- Heading -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Form</span>
+                    </h4>
+                    <!--Card-->
+                    <div class="card mb-3 mb-md-4 p-3 p-md-4">
+                        <form method="post">
+                            <div class="row">
+                                <div class="input-control col-md-6 mb-3">
+                                    <label class="form-label mb-0" for="firstname">First Name</label>
+                                    <input type="text" class="form-control" id="firstname" />
+                                    <span id="firstname-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control col-md-6 mb-3">
+                                    <label class="form-label mb-0" for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname" />
+                                    <span id="lastname-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control mb-3">
+                                    <label class="form-label mb-0" for="email">Email</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="youremail@example.com" />
+                                    <span id="email-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control col-4 col-sm-2 mb-3">
+                                    <label class="form-label mb-0" for="age">Age</label>
+                                    <select class="form-select" id="age">
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        <option value="32">32</option>
+                                        <option value="33">33</option>
+                                        <option value="34">34</option>
+                                        <option value="35">35</option>
+                                        <option value="36">36</option>
+                                        <option value="37">37</option>
+                                        <option value="38">38</option>
+                                        <option value="39">39</option>
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                        <option value="43">43</option>
+                                        <option value="44">44</option>
+                                        <option value="45">45</option>
+                                        <option value="46">46</option>
+                                        <option value="47">47</option>
+                                        <option value="48">48</option>
+                                        <option value="49">49</option>
+                                        <option value="50">50</option>
+                                        <option value="51">51</option>
+                                        <option value="52">52</option>
+                                        <option value="53">53</option>
+                                        <option value="54">54</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                    <span id="age-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control col-sm-8 col-md-10 mb-3">
+                                    <label class="form-label mb-0" for="country">Country</label>
+                                    <input type="text" class="form-control" id="country" />
+                                    <span id="country-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control col-md-6 mb-3">
+                                    <label class="form-label mb-0" for="mobile">Mobile No</label>
+                                    <input type="tel" class="form-control" id="mobile" />
+                                    <span id="mobile-error" class="text-danger"></span>
+                                </div>
+                                <div class="input-control col-md-6 mb-3">
+                                    <label class="form-label mb-0" for="Whatsapp">Whatsapp No</label>
+                                    <input type="tel" class="form-control" id="Whatsapp" />
+                                </div>
+                                <div class="mt-2 mb-3">
+                                    <h5 class="mb-3">Payment Methods</h5>
+                                    <div class="d-flex justify-conten-start align-items-center gap-2">
+                                        <button class="btn primary-btn">
+                                            <small class="d-flex align-items-center gap-2"><i class="fa-solid fa-dollar-sign"></i>PayHere</small>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="my-2">
+                                    <small class="text-muted">WhatsApp the slip: +94 74 034 0101 – We will contact you soon!</small>
+                                </div>
+                                <hr />
+
+                                <div class="mt-4">
+                                    <input type="submit" id="form-submit" class="btn w-100 primary-btn" value="Submit" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/.Card-->
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 mb-4">
+                    <!-- Heading -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Payment</span>
+                        <span class="badge rounded-pill badge-primary">1</span>
+                    </h4>
+
+                    <!-- Cart -->
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Price</span>
+                            <strong>$10</strong>
+                        </li>
+                    </ul>
+                    <!-- Cart -->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+    </section>
+
+
+      <!-- Footer -->
+  <footer class="footer text-center text-lg-start mt-2 py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Contact Us</h5>
+          <p>+94 74 034 0101</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Follow Us</h5>
+          <p>
+            <a href="https://web.facebook.com/IslandEssence/?_rdc=1&_rdr" target="_blank" class="social-links"><i class="fa-brands fa-facebook mx-2"></i>Island Essence</a>
+          </p>
+        </div>
+
+        <!-- Certification Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="title mb-3">Certifications</h5>
+          <p>ISO 22000 Certified</p>
+        </div>
+
+        <!-- Payment & Appointments -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="title mb-3">Payments</h5>
+          <div>
+            <!-- Payment Icons (Placeholder) -->
+            <!-- <img src="placeholder.png" alt="Payment Icon" class="payment-icons">
+            <img src="placeholder.png" alt="Payment Icon" class="payment-icons"> -->
+          </div>
+          <div class="mt-3">
+            <a href="./consult-doctor.html" class="btn btn-consultation primary-btn">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <!-- Bootstrap-5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="/src/scripts/formvalidation.js" defer></script>
+</body>
+
+</html>
